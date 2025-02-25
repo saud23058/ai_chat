@@ -26,6 +26,9 @@ export async function POST(req: NextRequest) {
       },
       {
         status: 500,
+        headers: {
+          "Access-Control-Allow-Origin": "*",
+        }
       }
     );
   }
